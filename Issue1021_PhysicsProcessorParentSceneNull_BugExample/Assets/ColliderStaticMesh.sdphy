@@ -1,0 +1,7 @@
+!ColliderShapeAsset
+Id: 145e8acc-88f0-4744-8c21-84d9d6440db3
+SerializedVersion: {Stride: 3.0.0.0}
+Tags: []
+ColliderShapes:
+    66ba9a4de7ee1997bf01403fa140b892: !StaticMeshColliderShapeDesc
+        Model: 2f4e12ed-c254-4066-9653-d47aff24ef5e:Ground

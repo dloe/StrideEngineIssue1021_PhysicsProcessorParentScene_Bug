@@ -1,0 +1,143 @@
+!SceneAsset
+Id: c0b9a2d2-7649-4ee6-95a9-59a70e92b246
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 10b8971d-0373-4a52-bd22-60967e6a3e24
+        - ref!! a28e5e86-b4c9-4bfb-b5fb-049a13ce6bae
+        - ref!! 9c2f069e-b1b6-4621-8856-c13f8caaa7ed
+        - ref!! 9ad14448-0432-4434-9363-785101248c01
+        - ref!! f4f06749-8528-49fa-8471-3f56d8267753
+    Parts:
+        -   Entity:
+                Id: 10b8971d-0373-4a52-bd22-60967e6a3e24
+                Name: Camera
+                Components:
+                    9f163a6f9c0e1787b477850d34e0b6cb: !TransformComponent
+                        Id: 47107e35-4b4e-43ea-8c3c-0184ea476c63
+                        Position: {X: 2.6, Y: 0.6, Z: -1.0}
+                        Rotation: {X: 0.0, Y: 0.82903755, Z: 0.0, W: 0.5591929}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    84c513876f74927bcfed6dd864b4fc7c: !CameraComponent
+                        Id: 6c45fceb-dd49-4d92-a033-96dc55c61e13
+                        Name: null
+                        Projection: Perspective
+                        Slot: 88f0cc1b-2a5d-4807-825c-f07b41f000e7
+                    2ff3218c7baa0ea63c2ec93160d01d77: !Issue1021_PhysicsProcessorParentSceneNull_BugExample.BasicCameraController,Issue1021_PhysicsProcessorParentSceneNull_BugExample
+                        Id: 35621db7-1609-46bb-a71f-b50d38ceac46
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+        -   Entity:
+                Id: 9ad14448-0432-4434-9363-785101248c01
+                Name: Ground
+                Components:
+                    15091616f528c4810e3b5e876cb30711: !TransformComponent
+                        Id: a4137ba3-ff16-4d94-8762-82528d178587
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6b58cf411072042c788b79016d8ec401: !ModelComponent
+                        Id: 46790e80-f4ef-4f15-9c39-d6da7239e887
+                        Model: 2f4e12ed-c254-4066-9653-d47aff24ef5e:Ground
+                        Materials: {}
+                    644e38f59cfb4554d2136436a9e6bcfa: !StaticColliderComponent
+                        Id: 7fffc6bc-2c18-4050-923e-0c77ffc7a64a
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            9ff6934f5afb55e4cacd852252b79f0e: !StaticPlaneColliderShapeDesc
+                                Normal: {X: 0.0, Y: 1.0, Z: 0.0}
+                                Offset: 0.0
+                    c248fafbdd71ddf831f67f8d85a16ccf: !Issue1021_PhysicsProcessorParentSceneNull_BugExample.DebugPhysicsShapes,Issue1021_PhysicsProcessorParentSceneNull_BugExample
+                        Id: 27a551b9-0589-4765-b8f8-1f09bc976fe5
+                        RenderGroup: Group7
+        -   Entity:
+                Id: 9c2f069e-b1b6-4621-8856-c13f8caaa7ed
+                Name: Skybox
+                Components:
+                    f6ecba5d1b751e4fc549f6668dfae6fa: !TransformComponent
+                        Id: 8d3d02d2-3e0a-400e-854b-4e23dd8fc32d
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a635d332b3a9a42830979b7218306261: !BackgroundComponent
+                        Id: e696189d-8c2c-4618-a136-1257f50d7d18
+                        Texture: 9701b100-543c-4218-9740-2f2b55f5bcf4:Skybox texture
+                    3595a3ba697f49e9852efe6fbd63b072: !LightComponent
+                        Id: 54a73c6c-bb4f-41d0-9b86-c2e10777c93d
+                        Type: !LightSkybox
+                            Skybox: 7de637fb-1fdf-490c-8338-322205ea0f53:Skybox
+        -   Entity:
+                Id: a28e5e86-b4c9-4bfb-b5fb-049a13ce6bae
+                Name: Directional light
+                Components:
+                    df172cd8bfa3b0fb0046d8506d799235: !TransformComponent
+                        Id: 2a021f07-d464-48a4-ba46-ef2c3cc32ca0
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 1.131334E-08, Y: -0.9659258, Z: -0.25881904, W: -4.222196E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a6bbc0b59b107f3bf3111e129b032ae4: !LightComponent
+                        Id: c1e81037-2870-4225-810c-25fcee89327b
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow: !LightDirectionalShadowMap
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 20.0
+        -   Entity:
+                Id: f4f06749-8528-49fa-8471-3f56d8267753
+                Name: Sphere
+                Components:
+                    899614b96c89d72dc5bec292e898d0f3: !TransformComponent
+                        Id: 96bf53f2-3b32-4f79-8bf2-f975ee00d7e4
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    e70113b3fc118495a19c4ff6ef068127: !ModelComponent
+                        Id: 9e6af2f9-789f-49dc-8ae1-9449ae44b83f
+                        Model: 872cc5b3-2727-439c-898b-a23831f570a0:Sphere
+                        Materials: {}
+                    f823e09aca02fb8c2d4a7bdf3d6e83b7: !StaticColliderComponent
+                        Id: 5df84adf-112e-4645-99d3-a7b3fd668e7f
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            204a7f11d446166b78ea4d5cf365fed7: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.1
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    8d8d4a5a40248b6edde0eaae68e8bfa9: !Issue1021_PhysicsProcessorParentSceneNull_BugExample.DebugPhysicsShapes,Issue1021_PhysicsProcessorParentSceneNull_BugExample
+                        Id: 68555813-4a34-4786-80fa-6dd4593b4c2c
+                        RenderGroup: Group7
